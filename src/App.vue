@@ -3,13 +3,15 @@ import {reactive} from 'vue';
 
 const estado = reactive ({
   operacao: ['soma','resta','multiplicar','dividir'],
-  primero : '',
-  segundo: '',
+  primero:0,
+  segundo:0,
   mensagem: 'Elige una operacion',
 });
+
 function soma(x,y){
-  return estado.primero + estado.segundo;
+  return estado.primero  + estado.segundo;
 };
+
 function resta(x,y){
   return estado.primero - estado.segundo;
 };
