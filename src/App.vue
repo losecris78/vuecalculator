@@ -8,17 +8,17 @@ const estado = reactive ({
   mensagem: 'Elige una operacion',
 });
 
-function soma(x,y){
-  return estado.primero  + estado.segundo;
+function soma(){
+  return parseFloat(estado.primero)  + parseFloat(estado.segundo);
 };
 
-function resta(x,y){
+function resta(){
   return estado.primero - estado.segundo;
 };
-function multiplicar(x,y){
+function multiplicar(){
   return estado.primero * estado.segundo;
 }
-function dividir(x,y){
+function dividir(){
   return estado.primero / estado.segundo;
 }
 const getOperacao = () =>{
